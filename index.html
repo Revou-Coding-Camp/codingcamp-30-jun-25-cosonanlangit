@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="main-header p-[12px]">
+        <!-- logo -->
+        <div class="main-logo"></div>
+
+        <!-- navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#message">Message Us</a>
+        </nav>
+    </header>
+    <hr />
+
+    <!-- main content -->
+    <main>
+        <section id="home" class="min-h-[300px]">   
+            <header class="py-[32px] text-center">
+            <h1>Welcome to My Webiste</h1>
+        </header>
+
+        <div class="home-background" ></div>
+        </section>
+        <hr />
+
+     <!-- our profile section -->
+        <section id="profile" class="min-h-[300px]">
+            <header>
+                <h2>Our Profile</h2>
+            </header>
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quas. Rem, alias labore enim sunt tempore maxime, libero ab distinctio voluptate ullam quisquam nihil dolores animi dicta omnis autem aut.</p>
+            </article>
+        </section>
+        <hr>
+        <!-- portofolio section -->
+        <section id="portofolio" class="min-h-[300px]">
+            <header>
+                <h2>Portofolio</h2>
+            </header>
+        </section>
+
+        <hr />
+        <!-- message us section -->
+        <section id="message" class="min-h-[300px]">
+            <header class="py-[32px] text-center">
+                <h2>Message Us</h2>
+            </header>
+        
+        <div class="flex justify-between items-center px-[16px]">
+       
+            <!-- message form -->
+            <form>
+                <div>
+                    <label for="input-name">Name:</label>
+                    <input type="text" id="input-name" name="name"
+                    class="border border-gray-300 rounded p-[8px] w-full">
+                </div>
+
+                <div class="py-[16px]">
+                   <button type="button" class="border rounded p-[8px] bg-blue-200 text-white" onclick="validateForm();">Send Message</button>
+                </div>
+            </form>
+
+            <!-- result form -->
+             <aside class="py-[16px]">
+                <p id="result-form">Thank you for your message!</p>
+             </aside>
+        </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
+
+    <!-- js eksternal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
